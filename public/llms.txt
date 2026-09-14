@@ -1,0 +1,16 @@
+# aisolhub
+
+> Automation studio. We ship AI agents, n8n workflows, CRM sync and WhatsApp systems for businesses in the US, UK and Europe. We do not build websites.
+
+## Site
+- Home: https://aisolhub.com/
+- Work: https://aisolhub.com/work
+- Sitemap: https://aisolhub.com/sitemap.xml
+
+## Contact
+- WhatsApp: https://wa.me/923126413792
+- LinkedIn: https://www.linkedin.com/in/aisolhub
+- GitHub: https://github.com/aisolhub2026
+
+## What we do
+Lead generation, social posting, AI customer replies, AI phone receptionist, CRM follow-ups, daily admin automation, and n8n / Make / Zapier workflows trained on the client's own data.

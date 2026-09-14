@@ -1,0 +1,12 @@
+/* TEAM */
+Studio: aisolhub
+Contact: https://wa.me/923126413792
+LinkedIn: https://www.linkedin.com/in/aisolhub
+GitHub: https://github.com/aisolhub2026
+Location: US / UK / Europe
+
+/* SITE */
+Standards: HTML5, CSS, React
+Language: English
+Doctype: HTML5
+Last update: 2026-09-15

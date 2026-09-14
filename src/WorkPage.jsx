@@ -4,6 +4,7 @@ import { SiteFooter, SiteNav } from "./chrome";
 import FlowCanvas from "./FlowCanvas";
 import Seo from "./Seo";
 import { PROJECT_FILTERS, projectsData } from "./data/projects";
+import { workJsonLd } from "./data/seo";
 import { s } from "./styleInline";
 import { SITE_URL, WORK_DESC, WORK_TITLE, waLink } from "./site";
 
@@ -70,52 +71,23 @@ export default function WorkPage() {
     [filter]
   );
 
-  const jsonLd = useMemo(
-    () => ({
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "CollectionPage",
-          "@id": `${SITE_URL}/work#webpage`,
-          url: `${SITE_URL}/work`,
-          name: WORK_TITLE,
-          description: WORK_DESC,
-          isPartOf: { "@id": `${SITE_URL}/#website` },
-          about: { "@id": `${SITE_URL}/#business` },
-          inLanguage: "en",
-          breadcrumb: { "@id": `${SITE_URL}/work#breadcrumb` },
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": `${SITE_URL}/work#breadcrumb`,
-          itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
-            { "@type": "ListItem", position: 2, name: "Work", item: `${SITE_URL}/work` },
-          ],
-        },
-        {
-          "@type": "ItemList",
-          name: "aisolhub automations",
-          numberOfItems: projectsData.length,
-          itemListElement: projectsData.map((project, i) => ({
-            "@type": "ListItem",
-            position: i + 1,
-            name: project.title,
-            url: project.liveUrl || `${SITE_URL}/work`,
-          })),
-        },
-      ],
-    }),
-    []
-  );
-
   return (
     <div data-m-page="1" className="work-page" style={s("background: #f3f4f6; overflow: hidden;")}>
-      <Seo title={WORK_TITLE} description={WORK_DESC} canonical={`${SITE_URL}/work`} jsonLd={jsonLd} />
+      <Seo title={WORK_TITLE} description={WORK_DESC} canonical={`${SITE_URL}/work`} jsonLd={workJsonLd} />
       <div style={s("background: #08090b; position: relative;")}>
         <SiteNav variant="work" />
         <header id="main" className="work-hero" data-m-hero="1">
           <div className="work-hero-copy" data-m-htext="1">
+            <nav className="crumbs" aria-label="Breadcrumb">
+              <ol>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <span aria-current="page">Work</span>
+                </li>
+              </ol>
+            </nav>
             <div className="work-hero-kicker">Client work</div>
             <h1>Automations we shipped. Not websites we designed.</h1>
             <p>

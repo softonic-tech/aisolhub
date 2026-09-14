@@ -4,6 +4,7 @@ import { SiteFooter, SiteNav } from "./chrome";
 import FlowCanvas from "./FlowCanvas";
 import WhatsAppAgentPreview from "./WhatsAppAgentPreview";
 import Seo from "./Seo";
+import { FAQS, homeJsonLd } from "./data/seo";
 import { s } from "./styleInline";
 import { HOME_DESC, HOME_TITLE, SITE_URL, WHATSAPP_NUMBER } from "./site";
 const WORDS = ["busywork.", "follow ups.", "spreadsheets.", "phone calls.", "lead hunting.", "data.", "emails."];
@@ -161,7 +162,7 @@ export default function HomePage() {
 
   return (
 <div data-m-page="1" style={s("background: #f3f4f6; overflow: hidden;")}>
-<Seo title={HOME_TITLE} description={HOME_DESC} canonical={`${SITE_URL}/`} />
+<Seo title={HOME_TITLE} description={HOME_DESC} canonical={`${SITE_URL}/`} jsonLd={homeJsonLd} />
 
 {/* ======== NAV + DARK HERO ======== */}
 <div id="home" style={s("background: #08090b; position: relative;")}>
@@ -172,9 +173,9 @@ export default function HomePage() {
     <div data-m-htext="1" style={s("display: flex; flex-direction: column; gap: 26px;")}>
       <div style={s("font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #7ea7d8; letter-spacing: 0.12em; text-transform: uppercase;")}>Automation studio for busy business owners</div>
       <h1 data-m-h1="1" style={s("margin: 0; font-size: 56px; line-height: 1.06; letter-spacing: -0.03em; color: #f5f6f7; font-weight: 700; text-wrap: balance; perspective: 600px;")}>Automate the {rotatingWordEl}<br /><span style={s("color: #7ea7d8;")}>Grow the business.</span></h1>
-      <p style={s("margin: 0; font-size: 19px; line-height: 1.6; color: #9ba1a9; max-width: 52ch;")}>You did not start a business to sit on messages spreadsheets and leads. We do automation and data services. AI agents n8n CRM data sync lead generation voice receptionist WhatsApp. US UK Europe.</p>
+      <p style={s("margin: 0; font-size: 19px; line-height: 1.6; color: #9ba1a9; max-width: 52ch;")}>You did not start a business to sit in messages, spreadsheets and leads. We build AI agents, n8n workflows, CRM sync and WhatsApp systems for teams in the US, UK and Europe.</p>
       <div data-m-cta="1" style={s("display: flex; gap: 14px; align-items: center;")}>
-        <a className="hvr-3" href={waLink} target="_blank" style={s("background: #2e5e9e; color: #ffffff; padding: 15px 28px; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 4px 14px rgba(46,94,158,.4);")}>Chat on WhatsApp →</a>
+        <a className="hvr-3" href={waLink} target="_blank" rel="noopener noreferrer" style={s("background: #2e5e9e; color: #ffffff; padding: 15px 28px; border-radius: 10px; font-weight: 700; font-size: 16px; box-shadow: 0 4px 14px rgba(46,94,158,.4);")}>Chat on WhatsApp →</a>
         <a className="hvr-4" href="#services" style={s("color: #dcdee2; padding: 15px 24px; border-radius: 10px; border: 1px solid rgba(255,255,255,.2); font-weight: 600; font-size: 16px;")}>Explore services</a>
       </div>
       <div data-m-taglines="1" style={s("display: flex; gap: 28px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #7d838c;")}>
@@ -198,8 +199,8 @@ export default function HomePage() {
 <section id="services" data-screen-label="Services" style={s("max-width: 1200px; margin: 0 auto; padding: 96px 32px 40px;")}>
   <div data-m-shead="1" style={s("display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;")}>
     <div style={s("font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #2c4f7c; letter-spacing: 0.12em; text-transform: uppercase;")}>What we do</div>
-    <h2 data-m-h2="1" style={s("margin: 0; font-size: 40px; letter-spacing: -0.02em; font-weight: 700;")}>Automation data services AI agents n8n CRM WhatsApp</h2>
-    <p style={s("margin: 0; font-size: 17px; color: #5a5f66; max-width: 60ch; line-height: 1.6;")}>Lead generation CRM data sync AI receptionist WhatsApp replies n8n workflows social media automation daily admin. US UK Europe.</p>
+    <h2 data-m-h2="1" style={s("margin: 0; font-size: 40px; letter-spacing: -0.02em; font-weight: 700;")}>What we automate</h2>
+    <p style={s("margin: 0; font-size: 17px; color: #5a5f66; max-width: 60ch; line-height: 1.6;")}>Lead capture, CRM sync, AI receptionists, WhatsApp replies, n8n workflows, social posting and daily admin. Built for businesses in the US, UK and Europe.</p>
   </div>
   <figure className="svc-banner">
     <img src="/services-banner.jpg" width="1024" height="381" alt="aisolhub custom AI agents services: n8n, Vapi, Zapier, Make, GoHighLevel and Retell" decoding="async" />
@@ -1218,46 +1219,15 @@ export default function HomePage() {
 <section id="faq" data-screen-label="FAQ" style={s("max-width: 820px; margin: 0 auto; padding: 0 32px 96px;")}>
   <div data-m-shead="1" style={s("display: flex; flex-direction: column; gap: 12px; margin-bottom: 36px;")}>
     <div style={s("font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #2c4f7c; letter-spacing: 0.12em; text-transform: uppercase;")}>Questions we get</div>
-    <h2 data-m-h2="1" style={s("margin: 0; font-size: 40px; letter-spacing: -0.02em; font-weight: 700;")}>Automation data services n8n AI agents CRM WhatsApp</h2>
+    <h2 data-m-h2="1" style={s("margin: 0; font-size: 40px; letter-spacing: -0.02em; font-weight: 700;")}>Common questions</h2>
   </div>
   <div style={s("display: flex; flex-direction: column; gap: 12px;")}>
-    <details style={s("background: #ffffff; border: 1px solid #e9eaec; border-radius: 12px; padding: 18px 22px;")}>
-      <summary style={s("cursor: pointer; font-weight: 600; font-size: 16.5px; list-style: none;")}>need tech staff for automations n8n AI agents?</summary>
-      <p style={s("margin: 12px 0 4px; font-size: 15px; color: #5a5f66; line-height: 1.65;")}>No. We do setup testing maintenance. You use WhatsApp we run the automations n8n AI agents CRM.</p>
-    </details>
-
-    <details style={s("background: #ffffff; border: 1px solid #e9eaec; border-radius: 12px; padding: 18px 22px;")}>
-      <summary style={s("cursor: pointer; font-weight: 600; font-size: 16.5px; list-style: none;")}>n8n automations AI agents CRM WhatsApp?</summary>
-      <p style={s("margin: 12px 0 4px; font-size: 15px; color: #5a5f66; line-height: 1.65;")}>Yes n8n Make Zapier AI agents lead hunting CRM sync WhatsApp. Working system not slides.</p>
-    </details>
-    <details style={s("background: #ffffff; border: 1px solid #e9eaec; border-radius: 12px; padding: 18px 22px;")}>
-      <summary style={s("cursor: pointer; font-weight: 600; font-size: 16.5px; list-style: none;")}>voice receptionist AI phone?</summary>
-      <p style={s("margin: 12px 0 4px; font-size: 15px; color: #5a5f66; line-height: 1.65;")}>Yes AI phone receptionist answers calls books appointments logs CRM.</p>
-    </details>
-    <details style={s("background: #ffffff; border: 1px solid #e9eaec; border-radius: 12px; padding: 18px 22px;")}>
-      <summary style={s("cursor: pointer; font-weight: 600; font-size: 16.5px; list-style: none;")}>how long for automation data services n8n AI agents?</summary>
-      <p style={s("margin: 12px 0 4px; font-size: 15px; color: #5a5f66; line-height: 1.65;")}>Simple automations few days. AI agents voice receptionist n8n CRM two to four weeks. We test on your calls and data.</p>
-    </details>
-    <details style={s("background: #ffffff; border: 1px solid #e9eaec; border-radius: 12px; padding: 18px 22px;")}>
-      <summary style={s("cursor: pointer; font-weight: 600; font-size: 16.5px; list-style: none;")}>n8n Zapier Make HubSpot WhatsApp tools?</summary>
-      <p style={s("margin: 12px 0 4px; font-size: 15px; color: #5a5f66; line-height: 1.65;")}>n8n Zapier Make GoHighLevel HubSpot Zoho WhatsApp AI agents. If your tool has API we connect it.</p>
-    </details>
-    <details style={s("background: #ffffff; border: 1px solid #e9eaec; border-radius: 12px; padding: 18px 22px;")}>
-      <summary style={s("cursor: pointer; font-weight: 600; font-size: 16.5px; list-style: none;")}>automation data services cost?</summary>
-      <p style={s("margin: 12px 0 4px; font-size: 15px; color: #5a5f66; line-height: 1.65;")}>Fixed quote after free audit. Automation data services n8n AI agents CRM. Most clients cover cost in a few months.</p>
-    </details>
-    <details style={s("background: #ffffff; border: 1px solid #e9eaec; border-radius: 12px; padding: 18px 22px;")}>
-      <summary style={s("cursor: pointer; font-weight: 600; font-size: 16.5px; list-style: none;")}>data services CRM sync n8n automations?</summary>
-      <p style={s("margin: 12px 0 4px; font-size: 15px; color: #5a5f66; line-height: 1.65;")}>Yes data services CRM sync reports stock spreadsheets then automations on top. Leads stock reports stay accurate.</p>
-    </details>
-    <details style={s("background: #ffffff; border: 1px solid #e9eaec; border-radius: 12px; padding: 18px 22px;")}>
-      <summary style={s("cursor: pointer; font-weight: 600; font-size: 16.5px; list-style: none;")}>automation data services US UK Europe?</summary>
-      <p style={s("margin: 12px 0 4px; font-size: 15px; color: #5a5f66; line-height: 1.65;")}>Yes automation data services for US UK Europe. English. WhatsApp email free audit.</p>
-    </details>
-    <details style={s("background: #ffffff; border: 1px solid #e9eaec; border-radius: 12px; padding: 18px 22px;")}>
-      <summary style={s("cursor: pointer; font-weight: 600; font-size: 16.5px; list-style: none;")}>business data services safe?</summary>
-      <p style={s("margin: 12px 0 4px; font-size: 15px; color: #5a5f66; line-height: 1.65;")}>Yes. Your accounts your passwords. AI agents only see data they need. Data services stay in your CRM.</p>
-    </details>
+    {FAQS.map((item) => (
+      <details key={item.q} style={s("background: #ffffff; border: 1px solid #e9eaec; border-radius: 12px; padding: 18px 22px;")}>
+        <summary style={s("cursor: pointer; font-weight: 600; font-size: 16.5px; list-style: none;")}>{item.q}</summary>
+        <p style={s("margin: 12px 0 4px; font-size: 15px; color: #5a5f66; line-height: 1.65;")}>{item.a}</p>
+      </details>
+    ))}
   </div>
 </section>
 

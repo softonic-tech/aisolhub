@@ -1,15 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://aisolhub.com/</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://aisolhub.com/og.webp</image:loc>
+      <image:title>aisolhub</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/services-banner.jpg</image:loc>
+      <image:title>aisolhub services</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://aisolhub.com/work</loc>
     <lastmod>2026-09-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/terzo.ai.png</image:loc>
+      <image:title>Terzo.ai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/simplyflow.com.png</image:loc>
+      <image:title>SimplyFlow</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/qobrix.com.png</image:loc>
+      <image:title>Qobrix</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/safestreet.com.au.png</image:loc>
+      <image:title>SafeStreet</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/guardxp.net.png</image:loc>
+      <image:title>GuardXP</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/fitnessads.ai.png</image:loc>
+      <image:title>FitnessAds.ai</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/fyp(autopostmd.com).png</image:loc>
+      <image:title>AutoPostMD</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/4corners.com.png</image:loc>
+      <image:title>4Corners</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/cypentra.com.png</image:loc>
+      <image:title>Cypentra</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/entrepedia.co.png</image:loc>
+      <image:title>Entrepedia</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/pepsprimal.com.png</image:loc>
+      <image:title>Primal Peps</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/tigerlabz.com.png</image:loc>
+      <image:title>Tigerlabz</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/quizapp.webp</image:loc>
+      <image:title>QuizApp</image:title>
+    </image:image>
   </url>
 </urlset>

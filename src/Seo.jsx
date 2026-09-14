@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { INDEX_ROBOTS } from "./data/seo";
 import { OG_IMAGE, SITE_URL } from "./site";
 
 function upsertMeta(attr, key, content) {
@@ -26,27 +27,8 @@ function setCanonical(href) {
   el.href = href;
 }
 
-function setHreflang(href) {
-  const alts = document.head.querySelectorAll("link[rel='alternate'][hreflang]");
-  if (!href) {
-    alts.forEach((node) => node.remove());
-    return;
-  }
-  if (!alts.length) {
-    ["en", "en-US", "en-GB", "x-default"].forEach((code) => {
-      const link = document.createElement("link");
-      link.rel = "alternate";
-      link.hreflang = code;
-      link.href = href;
-      document.head.appendChild(link);
-    });
-    return;
-  }
-  alts.forEach((node) => node.setAttribute("href", href));
-}
-
-function setJsonLd(id, data) {
-  let el = document.getElementById(id);
+function setJsonLd(data) {
+  let el = document.getElementById("site-jsonld");
   if (!data) {
     el?.remove();
     return;
@@ -54,7 +36,7 @@ function setJsonLd(id, data) {
   if (!el) {
     el = document.createElement("script");
     el.type = "application/ld+json";
-    el.id = id;
+    el.id = "site-jsonld";
     document.head.appendChild(el);
   }
   el.textContent = JSON.stringify(data);
@@ -64,7 +46,7 @@ export default function Seo({
   title,
   description,
   canonical,
-  robots = "index, follow",
+  robots = INDEX_ROBOTS,
   jsonLd,
 }) {
   useEffect(() => {
@@ -79,14 +61,12 @@ export default function Seo({
     upsertMeta("name", "twitter:image", OG_IMAGE);
     if (canonical) {
       setCanonical(canonical);
-      setHreflang(canonical);
       upsertMeta("property", "og:url", canonical);
     } else {
       setCanonical(null);
-      setHreflang(null);
-      upsertMeta("property", "og:url", SITE_URL + "/");
+      upsertMeta("property", "og:url", `${SITE_URL}/`);
     }
-    setJsonLd("page-jsonld", jsonLd || null);
+    setJsonLd(jsonLd || null);
   }, [title, description, canonical, robots, jsonLd]);
 
   return null;

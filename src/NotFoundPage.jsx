@@ -6,7 +6,7 @@ import { NOT_FOUND_DESC, NOT_FOUND_TITLE, waLink } from "./site";
 export default function NotFoundPage() {
   return (
     <div className="nf-page">
-      <Seo title={NOT_FOUND_TITLE} description={NOT_FOUND_DESC} robots="noindex, follow" />
+      <Seo title={NOT_FOUND_TITLE} description={NOT_FOUND_DESC} robots="noindex, follow" jsonLd={null} />
       <div className="nf-top">
         <SiteNav variant="work" />
         <main id="main" className="nf-main">

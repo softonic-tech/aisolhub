@@ -1,7 +1,7 @@
 {
   "name": "aisolhub",
   "short_name": "aisolhub",
-  "description": "aisolhub automation data services AI agents n8n CRM WhatsApp US UK Europe.",
+  "description": "AI agents, n8n workflows, CRM sync and WhatsApp systems for businesses in the US, UK and Europe.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

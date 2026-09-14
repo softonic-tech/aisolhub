@@ -3,14 +3,14 @@ export const WHATSAPP_NUMBER = "923126413792";
 export const waLink = `https://wa.me/${WHATSAPP_NUMBER}`;
 export const OG_IMAGE = `${SITE_URL}/og.webp`;
 
-export const HOME_TITLE = "Automation Data Services AI Agents n8n CRM | US UK Europe | aisolhub";
+export const HOME_TITLE = "aisolhub — AI agents, n8n workflows and CRM automation";
 export const HOME_DESC =
-  "aisolhub automation data services US UK Europe. AI agents n8n workflows CRM data sync lead generation voice receptionist WhatsApp social media. Free audit.";
+  "Custom AI agents, n8n workflows, CRM sync and WhatsApp systems for businesses in the US, UK and Europe. Free 20-minute audit.";
 
-export const WORK_TITLE = "Work | AI automations n8n CRM agents | aisolhub";
+export const WORK_TITLE = "Work — AI, n8n and CRM automations | aisolhub";
 export const WORK_DESC =
-  "aisolhub client work. AI agents n8n workflows CRM sync social posting for Terzo SimplyFlow Qobrix GuardXP and more. We automate the business. We do not build the website.";
+  "Client automations we shipped: AI agents, n8n, CRM and WhatsApp for Terzo, SimplyFlow, Qobrix, GuardXP and more.";
 
 export const NOT_FOUND_TITLE = "Page not found | aisolhub";
 export const NOT_FOUND_DESC =
-  "This page is not on aisolhub. Open home, client work, or WhatsApp for automation data services, AI agents, n8n and CRM.";
+  "This URL is not on aisolhub. Go to home, see client work, or message us on WhatsApp.";

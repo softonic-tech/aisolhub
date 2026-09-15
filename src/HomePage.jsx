@@ -202,6 +202,7 @@ export default function HomePage() {
     <h2 data-m-h2="1" style={s("margin: 0; font-size: 40px; letter-spacing: -0.02em; font-weight: 700;")}>What we automate</h2>
     <p style={s("margin: 0; font-size: 17px; color: #5a5f66; max-width: 60ch; line-height: 1.6;")}>Lead capture, CRM sync, AI receptionists, WhatsApp replies, n8n workflows, social posting and daily admin. Built for businesses in the US, UK and Europe.</p>
   </div>
+  <div className="svc-stack">
   <figure className="svc-banner">
     <img src="/services-banner.jpg" width="1024" height="381" alt="aisolhub custom AI agents services: n8n, Vapi, Zapier, Make, GoHighLevel and Retell" decoding="async" />
   </figure>
@@ -789,6 +790,7 @@ export default function HomePage() {
     <text x="320" y="184" fill="#d7dde6" fontSize="10" fontFamily="ui-sans-serif, -apple-system, sans-serif">Ads ROAS  3.2x</text>
   </g>
 </svg></div></div><div className="svc-body"><h3 style={s("margin: 0; font-size: 18px; font-weight: 600; letter-spacing: -0.02em; line-height: 1.28; color: #101113;")}>Reports Without Spreadsheets</h3><p style={s("margin: 0; font-size: 14.5px; color: #5a5f66; line-height: 1.55;")}>Your sales, bookings and ad numbers arrive as a short summary on WhatsApp or email every morning. No more digging through five dashboards to know how the business is doing.</p><div className="svc-tags"><span className="svc-tag">Daily summaries</span><span className="svc-tag">Sales reports</span><span className="svc-tag">KPIs</span></div></div></div>
+  </div>
   </div>
   <div style={s("margin-top: 44px; display: flex; flex-direction: column; gap: 18px; align-items: center;")}>
     <div style={s("font-size: 17px; font-weight: 600; color: #101113;")}>If you do it every day, we can automate it.</div>

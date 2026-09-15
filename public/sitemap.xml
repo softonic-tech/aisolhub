@@ -21,6 +21,18 @@
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
+      <image:loc>https://aisolhub.com/mockup/prmptree.com.png</image:loc>
+      <image:title>prmptree</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/peptidexresearch.com.png</image:loc>
+      <image:title>PeptideX Research</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://aisolhub.com/mockup/astorlegal.com.au.png</image:loc>
+      <image:title>Astor Legal</image:title>
+    </image:image>
+    <image:image>
       <image:loc>https://aisolhub.com/mockup/terzo.ai.png</image:loc>
       <image:title>Terzo.ai</image:title>
     </image:image>

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { SiteFooter, SiteNav } from "./chrome";
 import Seo from "./Seo";
 import { NOT_FOUND_DESC, NOT_FOUND_TITLE, waLink } from "./site";
+import { projectsData } from "./data/projects";
 
 export default function NotFoundPage() {
   return (
@@ -36,7 +37,7 @@ export default function NotFoundPage() {
             <li>
               <Link to="/work">
                 <strong>Work</strong>
-                <span>Thirteen builds. Not websites.</span>
+                <span>{projectsData.length} builds. Not websites.</span>
               </Link>
             </li>
             <li>

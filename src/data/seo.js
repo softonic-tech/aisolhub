@@ -74,7 +74,7 @@ const business = {
     "CRM data sync",
     "n8n automation",
   ],
-  sameAs: ["https://www.linkedin.com/in/aisolhub", "https://github.com/aisolhub2026"],
+  sameAs: ["https://www.linkedin.com/in/aisolhub", `${SITE_URL}/cv.pdf`],
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "sales",
@@ -155,7 +155,7 @@ export const workJsonLd = {
       url: `${SITE_URL}/work`,
       name: "Work — AI, n8n and CRM automations | aisolhub",
       description:
-        "Client automations we shipped: AI agents, n8n, CRM and WhatsApp for Terzo, SimplyFlow, Qobrix, GuardXP and more.",
+        "Client automations we shipped: AI agents, n8n, CRM and WhatsApp for prmptree, PeptideX, Astor Legal, Terzo, SimplyFlow and more.",
       isPartOf: { "@id": `${SITE_URL}/#website` },
       about: { "@id": `${SITE_URL}/#business` },
       inLanguage: "en",

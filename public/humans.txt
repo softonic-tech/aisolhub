@@ -2,7 +2,7 @@
 Studio: aisolhub
 Contact: https://wa.me/923126413792
 LinkedIn: https://www.linkedin.com/in/aisolhub
-GitHub: https://github.com/aisolhub2026
+CV: https://aisolhub.com/cv.pdf
 Location: US / UK / Europe
 
 /* SITE */

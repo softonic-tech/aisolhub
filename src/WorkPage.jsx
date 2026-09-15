@@ -93,7 +93,7 @@ export default function WorkPage() {
             <p>
               Screenshots show the businesses we automated for. Behind each one: AI agents, n8n workflows, CRM sync, social posting and ops that run without a person in the loop.
             </p>
-            <div className="work-hero-meta">13 engagements · AI · n8n · CRM · social · US UK Europe</div>
+            <div className="work-hero-meta">{projectsData.length} engagements · AI · n8n · CRM · social · US UK Europe</div>
           </div>
           <FlowCanvas ticks={WORK_TICKS} />
         </header>

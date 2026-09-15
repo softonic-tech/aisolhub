@@ -9,6 +9,60 @@ export const PROJECT_FILTERS = [
 
 export const projectsData = [
   {
+    id: 14,
+    title: "prmptree",
+    sector: "Inbox automation",
+    summary: "Every mailbox in one place. Autopilot and Ask mode agents.",
+    description:
+      "prmptree is an AI inbox agent. We did not build a new email client for the brand. We built the agent layer: one inbox, Autopilot that reads drafts flags and archives on its own, and Ask mode that waits until you ask.",
+    tags: ["AI agents", "Autopilot", "Ask mode", "Gmail"],
+    imageUrl: "/mockup/prmptree.com.png",
+    liveUrl: "https://www.prmptree.com/",
+    type: "ai",
+    keyFeatures: [
+      "All inboxes in one place",
+      "Autopilot reads, drafts, flags and archives",
+      "Ask mode acts only when you ask",
+      "Gmail first, agent learns from approve and skip",
+    ],
+  },
+  {
+    id: 15,
+    title: "PeptideX Research",
+    sector: "Ecommerce",
+    summary: "WhatsApp, stock and cart automations for a peptides shop.",
+    description:
+      "PeptideX Research already had the store. We automated WhatsApp replies, stock alerts, abandoned carts and an AI support agent on product and COA questions so the shop is not run from a spreadsheet.",
+    tags: ["WhatsApp", "n8n", "Shopify", "CRM"],
+    imageUrl: "/mockup/peptidexresearch.com.png",
+    liveUrl: "https://peptidexresearch.com/",
+    type: "crm",
+    keyFeatures: [
+      "WhatsApp agent for product questions",
+      "Low-stock alerts and morning inventory notes",
+      "Abandoned cart follow-up",
+      "AI support on product and COA docs",
+    ],
+  },
+  {
+    id: 16,
+    title: "Astor Legal",
+    sector: "Criminal law",
+    summary: "Intake, booking and WhatsApp follow-up for a Sydney firm.",
+    description:
+      "Astor Legal is a criminal and traffic law firm in Parramatta and Sydney. We did not rebuild the site. We automated intake: web enquiry into the CRM, consult booking, and WhatsApp follow-up so no case sits overnight.",
+    tags: ["WhatsApp", "CRM", "n8n", "Intake"],
+    imageUrl: "/mockup/astorlegal.com.au.png",
+    liveUrl: "https://astorlegal.com.au/",
+    type: "crm",
+    keyFeatures: [
+      "Web enquiry captured as a CRM lead",
+      "Consult booking without back-and-forth",
+      "WhatsApp and email follow-up the same day",
+      "New cases routed to a senior-lawyer slot",
+    ],
+  },
+  {
     id: 1,
     title: "Terzo.ai",
     sector: "Contract intelligence",

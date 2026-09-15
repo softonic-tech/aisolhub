@@ -65,6 +65,13 @@
       ]
     },
     {
+      "source": "/cv.pdf",
+      "headers": [
+        { "key": "Content-Type", "value": "application/pdf" },
+        { "key": "Content-Disposition", "value": "inline; filename=\"Ezel-Fatima-CV.pdf\"" }
+      ]
+    },
+    {
       "source": "/404.html",
       "headers": [
         { "key": "X-Robots-Tag", "value": "noindex, follow" },

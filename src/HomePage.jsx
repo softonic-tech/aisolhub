@@ -821,18 +821,40 @@ export default function HomePage() {
         <div className="hw-viz" aria-hidden="true">
           <div className="hw-mock">
             <div className="hw-mock-bar"><span className="hw-dots"><i></i><i></i><i></i></span><span>Audit call</span></div>
-            <div className="hw-mock-body">
-              <div className="hw-avatars">
-                <span className="hw-av">Y</span>
-                <span className="hw-av on">S</span>
-                <div className="hw-av-meta"><b>Finding time leaks</b>aisolhub · 20 min</div>
-              </div>
-              <ul className="hw-list">
-                <li className="is-on"><i></i>Lead replies</li>
-                <li className="is-on"><i></i>Missed calls</li>
-                <li><i></i>Invoice chasing</li>
-              </ul>
-              <div className="hw-meter"><span></span></div>
+            <div className="hw-mock-body hw-mock-screen">
+              <svg className="hw-scene" viewBox="0 0 340 210" width="100%" height="210" aria-hidden="true">
+                <rect width="340" height="210" fill="#08090b" />
+                <rect x="12" y="10" width="152" height="92" rx="10" fill="#101218" stroke="#1e242c" />
+                <rect x="176" y="10" width="152" height="92" rx="10" fill="#101218" stroke="#2e5e9e" />
+                <circle cx="88" cy="46" r="16" fill="#1a2029" stroke="#2a313c" />
+                <text x="88" y="51" textAnchor="middle" fill="#9ba1a9" fontSize="11" fontFamily="ui-sans-serif, sans-serif" fontWeight="600">You</text>
+                <text x="88" y="86" textAnchor="middle" fill="#6b7380" fontSize="9" fontFamily="ui-sans-serif, sans-serif">Muted</text>
+                <circle cx="252" cy="46" r="16" fill="#2e5e9e" />
+                <text x="252" y="51" textAnchor="middle" fill="#fff" fontSize="11" fontFamily="ui-sans-serif, sans-serif" fontWeight="600">AH</text>
+                <text x="252" y="78" textAnchor="middle" fill="#c5d3e4" fontSize="9" fontFamily="ui-sans-serif, sans-serif">aisolhub</text>
+                <g className="hw-wave" transform="translate(228 84)">
+                  <rect x="0" y="4" width="2.2" height="8" rx="1" fill="#7ea7d8" /><rect x="4" y="1" width="2.2" height="14" rx="1" fill="#7ea7d8" /><rect x="8" y="3" width="2.2" height="10" rx="1" fill="#7ea7d8" /><rect x="12" y="0" width="2.2" height="16" rx="1" fill="#7ea7d8" /><rect x="16" y="2" width="2.2" height="12" rx="1" fill="#7ea7d8" /><rect x="20" y="5" width="2.2" height="6" rx="1" fill="#7ea7d8" />
+                </g>
+                <text x="12" y="122" fill="#6b7380" fontSize="9" fontFamily="'IBM Plex Mono', ui-monospace, monospace" letterSpacing="0.8">AUDIT NOTES · 12:08 LEFT</text>
+                <g className="hw-note hw-note-1">
+                  <rect x="12" y="130" width="316" height="22" rx="6" fill="#101218" />
+                  <circle className="hw-tick-ring" cx="26" cy="141" r="6" fill="none" stroke="#2a313c" strokeWidth="1.4" />
+                  <path className="hw-tick" d="M22.6 141.2l2.4 2.4 4.6-5" fill="none" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <text x="40" y="145" fill="#e8eaed" fontSize="11" fontFamily="ui-sans-serif, sans-serif">Lead replies sitting in WhatsApp overnight</text>
+                </g>
+                <g className="hw-note hw-note-2">
+                  <rect x="12" y="156" width="316" height="22" rx="6" fill="#101218" />
+                  <circle className="hw-tick-ring" cx="26" cy="167" r="6" fill="none" stroke="#2a313c" strokeWidth="1.4" />
+                  <path className="hw-tick" d="M22.6 167.2l2.4 2.4 4.6-5" fill="none" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <text x="40" y="171" fill="#e8eaed" fontSize="11" fontFamily="ui-sans-serif, sans-serif">Missed calls with no booking</text>
+                </g>
+                <g className="hw-note hw-note-3">
+                  <rect x="12" y="182" width="316" height="22" rx="6" fill="#101218" />
+                  <circle className="hw-tick-ring" cx="26" cy="193" r="6" fill="none" stroke="#2a313c" strokeWidth="1.4" />
+                  <path className="hw-tick" d="M22.6 193.2l2.4 2.4 4.6-5" fill="none" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  <text x="40" y="197" fill="#e8eaed" fontSize="11" fontFamily="ui-sans-serif, sans-serif">Invoice chasing from a spreadsheet</text>
+                </g>
+              </svg>
             </div>
           </div>
         </div>
@@ -856,16 +878,36 @@ export default function HomePage() {
         <div className="hw-viz" aria-hidden="true">
           <div className="hw-mock">
             <div className="hw-mock-bar"><span>Blueprint</span><span>Same day</span></div>
-            <div className="hw-mock-body">
-              <div className="hw-rows">
-                <div className="hw-row">WhatsApp agent <span className="hw-pill">included</span></div>
-                <div className="hw-row">CRM sync <span className="hw-pill">included</span></div>
-                <div className="hw-row">Voice receptionist <span className="hw-pill">optional</span></div>
-              </div>
-              <div className="hw-foot">
-                <div>Hours back / week<b>12 to 18</b></div>
-                <div style={s("text-align:right;")}>Quote<b>Fixed</b></div>
-              </div>
+            <div className="hw-mock-body hw-mock-screen">
+              <svg className="hw-scene" viewBox="0 0 340 210" width="100%" height="210" aria-hidden="true">
+                <rect width="340" height="210" fill="#08090b" />
+                <text x="16" y="28" fill="#f5f6f7" fontSize="13" fontFamily="ui-sans-serif, sans-serif" fontWeight="700">Scope · AH-204</text>
+                <text x="324" y="28" textAnchor="end" fill="#7ea7d8" fontSize="10" fontFamily="'IBM Plex Mono', ui-monospace, monospace">SAME DAY</text>
+                <g className="hw-line hw-line-1">
+                  <rect x="16" y="42" width="308" height="36" rx="8" fill="#101218" stroke="#1e242c" />
+                  <text x="28" y="64" fill="#e8eaed" fontSize="12" fontFamily="ui-sans-serif, sans-serif">WhatsApp agent</text>
+                  <rect x="236" y="52" width="74" height="16" rx="8" fill="#2e5e9e" />
+                  <text x="273" y="64" textAnchor="middle" fill="#fff" fontSize="9" fontFamily="'IBM Plex Mono', ui-monospace, monospace">INCLUDED</text>
+                </g>
+                <g className="hw-line hw-line-2">
+                  <rect x="16" y="84" width="308" height="36" rx="8" fill="#101218" stroke="#1e242c" />
+                  <text x="28" y="106" fill="#e8eaed" fontSize="12" fontFamily="ui-sans-serif, sans-serif">CRM sync</text>
+                  <rect x="236" y="94" width="74" height="16" rx="8" fill="#2e5e9e" />
+                  <text x="273" y="106" textAnchor="middle" fill="#fff" fontSize="9" fontFamily="'IBM Plex Mono', ui-monospace, monospace">INCLUDED</text>
+                </g>
+                <g className="hw-line hw-line-3">
+                  <rect x="16" y="126" width="308" height="36" rx="8" fill="#101218" stroke="#1e242c" />
+                  <text x="28" y="148" fill="#e8eaed" fontSize="12" fontFamily="ui-sans-serif, sans-serif">Voice receptionist</text>
+                  <rect x="236" y="136" width="74" height="16" rx="8" fill="none" stroke="#3a5474" />
+                  <text x="273" y="148" textAnchor="middle" fill="#7ea7d8" fontSize="9" fontFamily="'IBM Plex Mono', ui-monospace, monospace">OPTIONAL</text>
+                </g>
+                <g className="hw-total">
+                  <rect x="16" y="172" width="308" height="26" rx="8" fill="#0e141c" />
+                  <text x="28" y="189" fill="#9ba1a9" fontSize="11" fontFamily="ui-sans-serif, sans-serif">Hours back / week</text>
+                  <text x="168" y="189" fill="#f5f6f7" fontSize="12" fontFamily="ui-sans-serif, sans-serif" fontWeight="700">12–18</text>
+                  <text x="324" y="189" textAnchor="end" fill="#7ea7d8" fontSize="12" fontFamily="ui-sans-serif, sans-serif" fontWeight="700">Fixed quote</text>
+                </g>
+              </svg>
             </div>
           </div>
         </div>
@@ -889,18 +931,30 @@ export default function HomePage() {
         <div className="hw-viz" aria-hidden="true">
           <div className="hw-mock">
             <div className="hw-mock-bar"><span>Workflow</span><span className="hw-live"><i></i> Live</span></div>
-            <div className="hw-mock-body">
-              <div className="hw-flow">
-                <div className="hw-node">Lead</div>
-                <span className="hw-arr"></span>
-                <div className="hw-node on">Agent</div>
-                <span className="hw-arr"></span>
-                <div className="hw-node">CRM</div>
-              </div>
-              <ul className="hw-list">
-                <li className="is-on"><i></i>Tested on real calls</li>
-                <li className="is-on"><i></i>Team trained</li>
-              </ul>
+            <div className="hw-mock-body hw-mock-screen">
+              <svg className="hw-scene" viewBox="0 0 340 210" width="100%" height="210" aria-hidden="true">
+                <rect width="340" height="210" fill="#08090b" />
+                <path d="M78 64 H148 C170 64 170 108 192 108 H262" fill="none" stroke="#1e242c" strokeWidth="2" />
+                <path className="hw-pipe" d="M78 64 H148 C170 64 170 108 192 108 H262" fill="none" stroke="#7ea7d8" strokeWidth="2" strokeLinecap="round" />
+                <circle className="hw-pkt" r="4" fill="#f5f6f7">
+                  <animateMotion dur="8s" repeatCount="indefinite" path="M78,64 H148 C170,64 170,108 192,108 H262" />
+                </circle>
+                <g className="hw-nd hw-nd-1">
+                  <rect x="28" y="44" width="72" height="40" rx="10" fill="#101218" stroke="#2a313c" />
+                  <text x="64" y="68" textAnchor="middle" fill="#e8eaed" fontSize="11" fontFamily="ui-sans-serif, sans-serif" fontWeight="600">Lead</text>
+                </g>
+                <g className="hw-nd hw-nd-2">
+                  <rect x="134" y="88" width="72" height="40" rx="10" fill="#101218" stroke="#2a313c" />
+                  <text x="170" y="112" textAnchor="middle" fill="#e8eaed" fontSize="11" fontFamily="ui-sans-serif, sans-serif" fontWeight="600">Agent</text>
+                </g>
+                <g className="hw-nd hw-nd-3">
+                  <rect x="240" y="88" width="72" height="40" rx="10" fill="#101218" stroke="#2a313c" />
+                  <text x="276" y="112" textAnchor="middle" fill="#e8eaed" fontSize="11" fontFamily="ui-sans-serif, sans-serif" fontWeight="600">CRM</text>
+                </g>
+                <g className="hw-log hw-log-1"><rect x="16" y="148" width="308" height="16" rx="4" fill="#101218" /><text x="24" y="159" fill="#9ba1a9" fontSize="10" fontFamily="'IBM Plex Mono', ui-monospace, monospace">12:41:08  lead captured · WhatsApp</text></g>
+                <g className="hw-log hw-log-2"><rect x="16" y="168" width="308" height="16" rx="4" fill="#101218" /><text x="24" y="179" fill="#9ba1a9" fontSize="10" fontFamily="'IBM Plex Mono', ui-monospace, monospace">12:41:09  agent booked Thu 15:30</text></g>
+                <g className="hw-log hw-log-3"><rect x="16" y="188" width="308" height="16" rx="4" fill="#101218" /><text x="24" y="199" fill="#c5d3e4" fontSize="10" fontFamily="'IBM Plex Mono', ui-monospace, monospace">12:41:10  Salesforce · AH-4821 written</text></g>
+              </svg>
             </div>
           </div>
         </div>
@@ -924,12 +978,31 @@ export default function HomePage() {
         <div className="hw-viz" aria-hidden="true">
           <div className="hw-mock">
             <div className="hw-mock-bar"><span>Systems</span><span className="hw-run"><i></i> Running</span></div>
-            <div className="hw-mock-body">
-              <div className="hw-bars"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-              <div className="hw-foot">
-                <div>Last check<b>2 min ago</b></div>
-                <div style={s("text-align:right;")}>Incidents this week<b>0</b></div>
-              </div>
+            <div className="hw-mock-body hw-mock-screen">
+              <svg className="hw-scene" viewBox="0 0 340 210" width="100%" height="210" aria-hidden="true">
+                <rect width="340" height="210" fill="#08090b" />
+                <text x="16" y="24" fill="#f5f6f7" fontSize="12" fontFamily="ui-sans-serif, sans-serif" fontWeight="700">Live systems</text>
+                <text x="324" y="24" textAnchor="end" fill="#7ea7d8" fontSize="10" fontFamily="'IBM Plex Mono', ui-monospace, monospace">0 INCIDENTS</text>
+                <rect x="16" y="36" width="308" height="92" rx="10" fill="#101218" stroke="#1e242c" />
+                <polyline className="hw-spark" points="28,108 58,96 88,100 118,78 148,84 178,62 208,70 238,54 268,60 298,48 316,52" fill="none" stroke="#7ea7d8" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                <polygon className="hw-spark-fill" points="28,108 58,96 88,100 118,78 148,84 178,62 208,70 238,54 268,60 298,48 316,52 316,118 28,118" fill="#2e5e9e" opacity="0.16" />
+                <line className="hw-playhead" x1="178" y1="44" x2="178" y2="118" stroke="#f5f6f7" strokeWidth="1" opacity="0.35" />
+                <g className="hw-stat hw-stat-1">
+                  <circle cx="24" cy="150" r="4" fill="#3d8f63" />
+                  <text x="36" y="154" fill="#e8eaed" fontSize="11" fontFamily="ui-sans-serif, sans-serif">WhatsApp agent</text>
+                  <text x="324" y="154" textAnchor="end" fill="#9ba1a9" fontSize="10" fontFamily="'IBM Plex Mono', ui-monospace, monospace">OK · 2m</text>
+                </g>
+                <g className="hw-stat hw-stat-2">
+                  <circle cx="24" cy="172" r="4" fill="#3d8f63" />
+                  <text x="36" y="176" fill="#e8eaed" fontSize="11" fontFamily="ui-sans-serif, sans-serif">CRM sync</text>
+                  <text x="324" y="176" textAnchor="end" fill="#9ba1a9" fontSize="10" fontFamily="'IBM Plex Mono', ui-monospace, monospace">OK · 2m</text>
+                </g>
+                <g className="hw-stat hw-stat-3">
+                  <circle cx="24" cy="194" r="4" fill="#3d8f63" />
+                  <text x="36" y="198" fill="#e8eaed" fontSize="11" fontFamily="ui-sans-serif, sans-serif">Voice receptionist</text>
+                  <text x="324" y="198" textAnchor="end" fill="#9ba1a9" fontSize="10" fontFamily="'IBM Plex Mono', ui-monospace, monospace">OK · 4m</text>
+                </g>
+              </svg>
             </div>
           </div>
         </div>
